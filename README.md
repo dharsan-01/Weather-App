@@ -1,0 +1,1 @@
+A weather web application leveraging Django as the backend framework and integrated the OpenWeather API for real-time weather data retrieval. Designed a user-friendly interface using HTML and CSS to display weather information dynamically, ensuring a seamless user experience.
