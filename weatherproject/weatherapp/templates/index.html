@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body class="{{ weather_class }}">
+    <div class="container">
+        <form method="POST" class="weather-form">
+            {% csrf_token %}
+            <input type="text" name="city" placeholder="Enter city" class="input-field">
+            <button type="submit" class="btn">Search</button>
+        </form>
+        <div class="weather-info">
+            <h2 class="temperature">{{ temp_celsius }}&#176;C / {{ temp_fahrenheit }}&#176;F</h2>
+            <h3 class="city-name">{{ city }}</h3>
+            <p class="description">{{ description }}</p>
+            <p class="icon-container">
+                <img src="http://openweathermap.org/img/w/{{ icon }}.png" alt="Weather Icon" class="weather-icon">
+            </p>
+        </div>
+    </div>
+</body>
+</html>

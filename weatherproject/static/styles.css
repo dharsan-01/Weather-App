@@ -1,0 +1,116 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Background Styles Based on Weather */
+.sunny {
+    background-image: url("https://www.thecalifornian.com/gcdn/-mm-/e5c305e00d80354d1c0350948b3ccc39c5d4956e/c=0-202-3867-2377/local/-/media/Salinas/2015/02/24/B9316371807Z.1_20150224104851_000_GAOA20QVE.1-0.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp");
+}
+
+.cloudy {
+    background-image: url("https://media.istockphoto.com/id/512218646/photo/storm-sky-rain.jpg?s=612x612&w=0&k=20&c=RoUDM9BMwqW8NkPXjzAzlDKCHPOmdZhmmeT3jGA2EaM=");
+}
+
+.rainy {
+    background-image: url("https://www.nation.com.pk/digital_images/large/2023-04-03/weather-forecast-predicts-more-rain-in-the-coming-days-1680542139-9062.jpg");
+}
+
+.snowy {
+    background-image: url("https://c02.purpledshub.com/uploads/sites/77/2024/07/1ef43bc3-d710-6b3c-87ed-73457f12ddca.jpg");
+}
+
+.hazy {
+    background-image: url("https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/fog--mist/foggy-morning-in-a-meadow.jpg/foggy-morning-in-a-meadow.jpg/metofficegovuk%3AheroMedium");
+}
+
+
+.default-weather {
+    background-color: #f4f8fc;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form Styling */
+.weather-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Weather Info Styling */
+.weather-info {
+    text-align: center;
+}
+
+.temperature {
+    font-size: 48px;
+    color: #007bff;
+    margin: 0;
+}
+
+.city-name {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+}
+
+.icon-container {
+    margin-top: 10px;
+}
+
+.weather-icon {
+    width: 100px;
+}
